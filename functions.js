@@ -66,6 +66,10 @@ function ewLeaves (startTime, interval, id) {
 		if(m == 0){
 			m = m + "0";
 		}
+		if(h >= 24){
+			h = h - 24;
+		}
+		h = "0" + h;
 		spanEW.innerHTML = h + ":" + m + "HRS";
 		return null;
 	}
